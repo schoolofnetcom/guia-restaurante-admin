@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 
 import { UserModule } from './user/user.module';
+import { NotificationsModule } from './notifications/notifications.module';
 import { AppHttpService } from './app-http.service';
 
 const appRoutes: Routes = [
@@ -24,7 +25,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     UserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NotificationsModule
   ],
   providers: [
     AppHttpService

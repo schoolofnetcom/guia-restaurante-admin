@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col s12">
+        <h4><i class="material-icons">keyboard_arrow_right</i>Notificações <small class="grey-text">Envio de alertas</small></h4>
+    </div>
+    
+    <div class="col s12">
+        <div class="card-panel">
+            <form class="row" (submit)="send($event)">
+                <div class="input-field col s12">
+                    <textarea id="message" name="message" [(ngModel)]="notification.message" class="materialize-textarea"></textarea>
+                    <label for="message">Mensagem</label>
+                </div>
+        
+                <div class="input-field col s12">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
+    
